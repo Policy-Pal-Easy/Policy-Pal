@@ -1,0 +1,283 @@
+<section id="landing-page">
+<div class="container my-5">
+  <h1 class="display-4 text-center mb-5">Welcome to Our Insurance Platform</h1>
+  
+  <div class="row text-center">
+    <!-- Quote Premium Icon -->
+    <div class="col-md-4 mb-4">
+      <a href="https://quote-website.com" class="text-decoration-none">
+        <div class="card border-0 shadow-lg p-4 h-100 icon-card">
+          <div class="icon-container mb-3">
+            <i class="bi bi-receipt display-3 text-primary"></i>
+          </div>
+          <h5 class="card-title">Get a Quote</h5>
+          <p class="card-text text-muted">Find out how much you'll pay for your insurance.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- File Claim Icon -->
+    <div class="col-md-4 mb-4">
+      <a href="http://54.81.174.88:4200" class="text-decoration-none">
+        <div class="card border-0 shadow-lg p-4 h-100 icon-card">
+          <div class="icon-container mb-3">
+            <i src="bi bi-clipboard-check display-3 text-success"></i>
+          </div>
+          <h5 class="card-title">File a Claim</h5>
+          <p class="card-text text-muted">Submit a claim quickly and easily online.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Chat with Us Icon -->
+    <div class="col-md-4 mb-4">
+      <a href="https://chat-website.com" class="text-decoration-none">
+        <div class="card border-0 shadow-lg p-4 h-100 icon-card">
+          <div class="icon-container mb-3">
+            <i class="bi bi-chat-dots display-3 text-info"></i>
+          </div>
+          <h5 class="card-title">Chat with Us</h5>
+          <p class="card-text text-muted">Get live support and help for any inquiries.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+<section id="blog">
+    <div class="container my-5">
+  <h1 class="display-4 text-center mb-4">Insurance Insights & Tips</h1>
+
+  <!-- Blog Post 1 -->
+  <div class="card mb-5 shadow-lg border-0">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../../assets/insurance.jpg" class="img-fluid rounded-start" alt="Car Insurance">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">Understanding Car Insurance: What You Need to Know</h3>
+          <p class="text-muted">Published on September 20, 2024</p>
+          <p class="card-text">
+            Car insurance is essential for any vehicle owner, but do you know what type of coverage you really need? 
+            In this article, we dive into liability, collision, and comprehensive insurance, helping you make informed decisions.
+          </p>
+          <ul class="list-unstyled">
+            <li><strong>Resources:</strong></li>
+            <li><a href="https://www.progressive.com/answers/auto-101/" class="text-info">How does car insurance work?</a></li>
+
+          </ul>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Post 2 -->
+  <div class="card mb-5 shadow-lg border-0">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../../assets/lower.jpg" class="img-fluid rounded-start" alt="Home Insurance">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">How to Lower Your Home Insurance Premium</h3>
+          <p class="text-muted">Published on August 15, 2024</p>
+          <p class="card-text">
+            Discover practical ways to save on your home insurance. Learn about the importance of bundling policies, increasing deductibles, and home safety upgrades that could reduce your premiums.
+          </p>
+          <ul class="list-unstyled">
+            <li><strong>Resources:</strong></li>
+            <li><a href="https://www.nj.com/personal-finance/article/how-to-lower-your-car-insurance" class="text-info">How to lower your car insurance</a></li>
+          
+          </ul>
+          <a href="#" class="btn btn-success">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Blog Post 3 -->
+  <div class="card mb-5 shadow-lg border-0">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="../../assets/value.jpg" class="img-fluid rounded-start" alt="Insurance Claims">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">Top 5 Common Insurance Claims and How to Avoid Them</h3>
+          <p class="text-muted">Published on July 30, 2024</p>
+          <p class="card-text">
+            From water damage to auto accidents, we explore the most common insurance claims and provide tips to prevent them. Learn how taking preventive measures can save you money and hassle.
+          </p>
+          <ul class="list-unstyled">
+            <li><strong>Resources:</strong></li>
+
+            <li><a href="https://www.cutterhonolulumazda.com/the-smartest-ways-to-retain-maintain-your-cars-value/" class="text-info">How to keep up the value of your car?</a></li>
+          </ul>
+          <a href="#" class="btn btn-danger">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</section>
+<section id="faq">
+    <div class="container my-5">
+  <h2 class="text-center mb-4">Frequently Asked Questions (FAQ)</h2>
+
+  <div class="faq-qsn">
+    <div class="d-flex  justify-content-between align-items-center">
+      <p class="mb-0">What types of insurance do you offer?</p>
+      <button
+        type="button"
+        class="btn btn-outline-primary btn-sm"
+        (click)="collapse1.toggle()"
+        [attr.aria-expanded]="!isCollapsed1"
+        aria-controls="collapse1"
+      >
+        <span class="arrow">&#9654;</span>
+      </button>
+    </div>
+    <div #collapse1="ngbCollapse" [(ngbCollapse)]="isCollapsed1">
+      <div class="card">
+        <div class="card-body">We offer auto, home, health, and life insurance tailored to fit your needs.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-qsn">
+    <div class="d-flex justify-content-between align-items-center">
+      <p class="mb-0">How do I file a claim?</p>
+      <button
+        type="button"
+        class="btn btn-outline-primary btn-sm"
+        (click)="collapse2.toggle()"
+        [attr.aria-expanded]="!isCollapsed2"
+        aria-controls="collapse2"
+      >
+        <span class="arrow">&#9654;</span>
+      </button>
+    </div>
+    <div #collapse2="ngbCollapse" [(ngbCollapse)]="isCollapsed2">
+      <div class="card">
+        <div class="card-body">To file a claim, log into the app and fill out the claims form with the required documentation.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-qsn">
+    <div class="d-flex justify-content-between align-items-center">
+      <p class="mb-0">How long does it take to process a claim?</p>
+      <button
+        type="button"
+        class="btn btn-outline-primary btn-sm"
+        (click)="collapse3.toggle()"
+        [attr.aria-expanded]="!isCollapsed3"
+        aria-controls="collapse3"
+      >
+        <span class="arrow">&#9654;</span>
+      </button>
+    </div>
+    <div #collapse3="ngbCollapse" [(ngbCollapse)]="isCollapsed3">
+      <div class="card">
+        <div class="card-body">Processing times can vary, but we aim to keep you updated throughout the process.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-qsn">
+    <div class="d-flex justify-content-between align-items-center">
+      <p class="mb-0">Can I update my policy details online?</p>
+      <button
+        type="button"
+        class="btn btn-outline-primary btn-sm"
+        (click)="collapse4.toggle()"
+        [attr.aria-expanded]="!isCollapsed4"
+        aria-controls="collapse4"
+      >
+        <span class="arrow">&#9654;</span>
+      </button>
+    </div>
+    <div #collapse4="ngbCollapse" [(ngbCollapse)]="isCollapsed4">
+      <div class="card">
+        <div class="card-body">Yes, you can update your policy details through the app or by contacting our support team.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-qsn">
+    <div class="d-flex justify-content-between align-items-center">
+      <p class="mb-0">What should I do if my claim is denied?</p>
+      <button
+        type="button"
+        class="btn btn-outline-primary btn-sm"
+        (click)="collapse5.toggle()"
+        [attr.aria-expanded]="!isCollapsed5"
+        aria-controls="collapse5"
+      >
+        <span class="arrow">&#9654;</span>
+      </button>
+    </div>
+    <div #collapse5="ngbCollapse" [(ngbCollapse)]="isCollapsed5">
+      <div class="card">
+        <div class="card-body">If your claim is denied, review the denial letter and contact our support team for clarification.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+<section id="abous-us">
+    <div class="container my-5">
+  <h2 class="text-center mb-4">About Us</h2>
+  <p class="text-muted">
+    Welcome to Insurance App, where we provide reliable insurance solutions tailored to protect what matters most to you. With years of experience in the industry, our dedicated team is committed to delivering exceptional service and support to our clients. 
+  </p>
+  <p class="text-muted">
+    We believe in transparency and empowerment, offering a range of insurance products that cater to your unique needs. Whether you're looking for auto, home, or health insurance, we are here to help you make informed decisions.
+  </p>
+  <h4 class="mt-4">Our Mission</h4>
+  <p class="text-muted">
+    Our mission is to provide peace of mind through comprehensive coverage and outstanding customer service.
+  </p>
+</div>
+
+
+</section>
+<section id="footer">
+
+<section class="footer">
+    <footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>About Us</h5>
+        <p>Providing reliable insurance solutions to protect what matters most.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="/about" class="text-white">About Us</a></li>
+          <li><a href="/services" class="text-white">Our Services</a></li>
+          <li><a href="/blog" class="text-white">Blog</a></li>
+          <li><a href="/contact" class="text-white">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Contact Us</h5>
+        <p>Email: support@insuranceapp.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+    <hr class="bg-light">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2024 Insurance App. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</section>
+</section>
